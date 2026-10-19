@@ -1,0 +1,46 @@
+#include<iostream>
+using namespace std;
+
+class arithmatic
+{
+    public:
+        int no1;
+        int no2;
+
+        arithmatic()
+        {
+            no1=0;
+            no2=0;
+        }
+
+        arithmatic(int i, int j)
+        {
+            no1=i;
+            no2=j;
+        }
+
+        int addittion ()
+        {
+            int ans=0;
+            ans = no1 + no2;
+            return ans;
+
+        }
+
+};
+
+int main()
+{
+   arithmatic aobj1(10,11);
+
+   int result = 0;
+   result = aobj1.addittion();
+   
+   cout<<"Addittion is : "<<result<<"\n";
+
+
+
+
+
+    return 0;
+}
